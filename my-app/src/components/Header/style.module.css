@@ -1,0 +1,170 @@
+.mainContainer {
+  position: fixed;
+  width: 100%;
+  height: 110px;
+  z-index: 2;
+  top: 0;
+  list-style: none;
+}
+
+.mainContainer.light .topContainer {
+  background-color: #ffffff;
+}
+
+.mainContainer ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  height: 100%;
+  width: calc(50% - 300px);
+}
+
+.topContainer {
+  position: absolute;
+  width: 100%;
+  height: 110px;
+  background-color: #333333;
+  filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.5));
+}
+
+.topContainer .logo {
+  max-width: 100%;
+  display: inherit;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -32%);
+  margin: 0 auto;
+}
+
+.topContainer button {
+  visibility: hidden;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  padding: 0;
+  bottom: -5px;
+  width: 25px;
+  height: 25px;
+  background: none;
+  border: none;
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: translateX(-50%)
+             rotate(45deg);
+  transition: transform ease-in-out 0.75s;
+}
+
+.topContainer button:focus {
+  outline:0;
+}
+
+.topContainer button:hover {
+}
+
+.mainContainer.light .topContainer button {
+  border-color: #333;
+}
+
+.mainContainer.expanded .topContainer button {
+  transform: translateX(-50%)
+             rotate(225deg);
+}
+
+.navContainer {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  overflow: visible;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro';
+  font-size: 30px;
+}
+
+.navContainer .left {
+  float: left;
+}
+
+.navContainer .right {
+  float: right;
+}
+
+.navContainer li {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  vertical-align: middle;
+  padding: 0 20px;
+  width: calc(50% - 40px);
+}
+
+.navContainer a {
+  color: #fff;
+  transition: transform ease-out 0.1s;
+}
+
+.navContainer a:hover {
+  transform: scale(1.1);
+}
+
+.mainContainer.light .navContainer {
+  background-color: #333;
+}
+
+.mainContainer.light .navContainer a {
+  color: #333;
+}
+
+@media (max-width: 1100px) {
+  .topContainer {
+    z-index: 1;
+  }
+
+  .topContainer button {
+    visibility: visible;
+  }
+
+  .navContainer {
+    position: fixed;
+    max-height: 0;
+    z-index: 0;
+    padding-top: 0;
+    background-color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    overflow-y: hidden;
+    transition: max-height ease-in-out 1s,
+                padding ease-in-out 1s;
+  }
+
+  .navContainer a {
+    color: #333;
+  }
+
+  .navContainer ul {
+    width: 100%;
+    height: 200px;
+  }
+
+  .navContainer li {
+    width: 80%;
+    height: 50%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .mainContainer.expanded .navContainer {
+    max-height: 100vh;
+    padding-top: 200px;
+  }
+
+  .mainContainer.light .navContainer a {
+    color: #fff;
+  }
+}

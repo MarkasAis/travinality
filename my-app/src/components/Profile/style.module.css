@@ -1,0 +1,26 @@
+.topContainer {
+  margin-top: 110px;
+  text-align: center;
+  padding: 75px 0 15px 0;
+  font-size: 20px;
+}
+
+.topContainer > input {
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  background-color: #333;
+  padding: 15px 20px;
+  margin-bottom: 90px;
+  border: 1px solid rgba(1, 1, 1, 0);
+  transition: transform ease-in-out 0.2s,
+              color ease-in-out 0.2s,
+              background ease-in-out 0.2s;
+}
+
+.topContainer > input:hover {
+  transform: scale(1.1);
+  color: #333;
+  background-color: rgba(1, 1, 1, 0);
+  border-color: #333;
+}

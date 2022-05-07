@@ -1,0 +1,15 @@
+.container {
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  border: 1px solid white;
+  display: inline-block;
+}
+
+.container p {
+  display: inline-block;
+  margin: 0 0 0 10px;
+}

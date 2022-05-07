@@ -1,0 +1,43 @@
+.mainContainer {
+  overflow-x: hidden;
+}
+
+.bottomContainer {
+  height: 500px;
+}
+
+.bottomContainer .description {
+  width: calc(100% - 45px);
+  padding-right: 15px;
+  margin-left: 20px;
+  overflow-y: scroll;
+  height: 90%;
+}
+
+.bottomContainer .left, .bottomContainer .right {
+  display: inline-block;
+  height: 100%;
+}
+
+.bottomContainer .left {
+  width: 50%;
+  height: 460px;
+  margin-top: 40px;
+  float: left;
+}
+
+.bottomContainer .right {
+  position: relative;
+  width: 50%;
+  float: right;
+}
+
+@media (max-width: 750px) {
+  .bottomContainer .left, .bottomContainer .right{
+    width: 100%;
+  }
+
+  .bottomContainer .left {
+    height: auto;
+  }
+}

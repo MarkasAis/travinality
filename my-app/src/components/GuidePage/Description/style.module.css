@@ -1,0 +1,16 @@
+.container h1 {
+  text-align: center;
+}
+
+.container p {
+  font-size: 25px;
+}
+
+.container p span {
+  white-space: nowrap;
+}
+
+.container a:hover {
+  color: #2b75ff;
+  text-decoration: underline;
+}
