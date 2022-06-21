@@ -47,7 +47,7 @@ The instructions assume you're using *Windows*, though it can be run on other OS
 3. Run **```rails db:reset```** to initialize and seed the database.
 4. Run **```rails s```** to start the server. *(It runs on PORT 3000)*
 
-5. Now using **'Windows command promt'**, **cd** into **'my-app'** directory.
+5. Now using **'Windows command prompt'**, **cd** into **'my-app'** directory.
 6. Run **```npm install```** to install all required packages.
 7. Run **```npm start```** to run the application. *(It runs on PORT 3001)*
 8. If the website hasn't opened up automatically, navigate to **'localhost:3001'**.
